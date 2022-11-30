@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7df52a0db1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Test Your Knowledge!</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div class="heading">Test Your Random Fun Facts!</div>
-        <button class="start-btn">Start</button>
-        <button class="high-scores">High Scores</button>
+      <!-- this will provide the basic functions to start the game and to view high scores -->
+      <div class="heading">Test Your Random Knowledge!</div>
+      <a href="./game.html" id="start-btn">Start</a>
+      <a href="./highscore.html" class="btn" id="high-score">High Scores<i class="fa-solid fa-crown"></i></a>
     </header>
 
     <main>
-        <div class="game-stats">
-         <h2>Wins: <span class="wins">0</span></h2>
-         <h2>Losses: <span class="losses">0</span></h2>
+      <div class="game-stats">
+        <h2>Wins: <span id="wins">0</span></h2>
+        <h2>Losses: <span id="losses">0</span></h2>
+      </div>
+      <button id="reset">Reset Score</button>
+      <div class="timer">
+        <div id="timer-text">
+          <div class="large-font timer-count">100</div>
+          <h3>Seconds Remaining</h3>
         </div>
-        <button class="reset">Reset Score</button>
-        <div class="timer">
-            <div class="timer-text">
-                <div class="large-font timer-count">100</div>
-                <h3>Seconds Remaining</h3>
-            </div>
-        </div>
+      </div>
     </main>
 
     <script src="./assets/script.js"></script>
-</body>
+  </body>
 </html>
