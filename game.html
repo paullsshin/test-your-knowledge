@@ -11,13 +11,14 @@
     <title>Game Page</title>
   </head>
   <body>
-    <h1></h1>
     <div class="game-container">
-      <div class="timer-bar">
+      <div id="progressText"></div>
+      <div id="timer-bar">
         <div id="timer-bar-full"></div>
       </div>
+      <h1>Question goes here</h1>
       <div class="questions-container">
-        <h1 id="questions">Your Question will go here!</h1>
+        <h1 id="questions">Your Answers</h1>
         <div class="choice-container">
           <p class="first-choice">A</p>
           <p class="choice-text"data-number="1">Choice</p>
@@ -35,7 +36,10 @@
           <p class="choice-text"data-number="4">Choice</p>
         </div>
       </div>
+      <h1 id="score-tracker">Score 
+        <p id="score-count">0</p>
+      </h1>
     </div>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/game.js"></script>
   </body>
 </html>

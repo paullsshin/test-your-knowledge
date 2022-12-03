@@ -58,7 +58,7 @@ span {
 }
 
 #reset:hover {
-    cursor:crosshair;
+    cursor:cell;
 }
 
 .btn {
@@ -93,7 +93,7 @@ span {
 
 .btn:hover {
     /* adds the hover feature which also adds box shadow */
-    cursor: crosshair;
+    cursor: cell;
     box-shadow: 0.5rem 0.4rem 1.4rem 0.5rem rgba(67, 88, 113, 0.6);
     transition: transform 150ms;
     transform: sclae(1.03);
