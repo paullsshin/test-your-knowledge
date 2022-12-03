@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <script
-      src="https://kit.fontawesome.com/7df52a0db1.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="./assets/game.css" />
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+
+    <title>Game Page</title>
+  </head>
+  <body>
+    <h1></h1>
+    <div class="game-container">
+      <div class="timer-bar">
+        <div id="timer-bar-full"></div>
+      </div>
+      <div class="questions-container">
+        <h1 id="questions">Your Question will go here!</h1>
+        <div class="choice-container">
+          <p class="first-choice">A</p>
+          <p class="choice-text"data-number="1">Choice</p>
+          </div>
+        <div class="choice-container">
+          <p class="second-choice">B</p>
+          <p class="choice-text"data-number="2">Choice</p>
+          </div>
+        <div class="choice-container">
+          <p class="third-choice">C</p>
+          <p class="choice-text"data-number="3">Choice</p>
+          </div>
+        <div class="choice-container">
+          <p class="fourth-choice">D</p>
+          <p class="choice-text"data-number="4">Choice</p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>

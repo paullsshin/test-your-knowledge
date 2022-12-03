@@ -15,28 +15,28 @@
   <body>
     <header>
       <!-- this will provide the basic functions to start the game and to view high scores -->
-    <div class="heading">Test Your Knowledge!
-      <a href="./game.html" class="btn" id = "start-btn">Start</a>
-      <a href="./highscore.html" class="btn" id="high-score">High Scores<i class="fa-solid fa-crown"></i></a>
+    <div class="heading hidden">Test Your Knowledge!
+      <a href="./game.html" target="_blank" class="btn hidden" id = "start-btn">Start</a>
+      <a href="./highscore.html" class="btn hidden" id="highscore-btn">High Scores<i class="fa-solid fa-crown"></i></a>
     </div>
     </header>
 
     <main>
         <!-- this will display the wins and losses the player has and there is a reset function as well -->
-      <div class="game-stats">
+      <div class="game-stats hidden">
         <h2>Wins: <span id="wins"> 0</span></h2>
         <h2>Losses: <span id="losses"> 0</span></h2>
         <button id="reset">Reset Score</button>
     </div>
-      <div class="timer">
+      <!-- <div class="timer"> -->
         <!-- this is the timer -->
-        <div id="timer-text">
+        <!-- <div id="timer-text">
           <div class="large-font timer-count">100</div>
-          <h3>Seconds Remaining</h3>
+          <h3>Seconds Remaining</h3> -->
         </div>
       </div>
     </main>
 
-    <script src="./assets/script.js"></script>
+    <script src="./assets/game.js"></script>
   </body>
 </html>
