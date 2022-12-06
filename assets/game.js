@@ -68,7 +68,12 @@ var questions = [
 var SCORE_POINTS = 100;
 var MAX_QUESTIONS = 5;
 
-
+function startGame () {
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
+    getNewQuestion()
+}
 
 function getNewQuestion () {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {

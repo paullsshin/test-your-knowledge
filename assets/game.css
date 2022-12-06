@@ -42,11 +42,11 @@ h1 {
 
 
 .correct {
-    background: green;
+    background: rgb(10, 205, 10);
 }
 
 .incorrect {
-    background: red;
+    background: rgb(218, 16, 16);
 }
 
 @media screen and (max-width: 768px) {
